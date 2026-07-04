@@ -41,10 +41,6 @@
         local crews shaping this space. Some are confirmed in the room, some are
         areas we want to connect with as the programme grows.
       </p>
-      <p class="max-w-xl text-sm leading-relaxed text-fog lg:justify-self-end">
-        Living snapshot, not an official partner wall. Missing a project, local
-        mesh or field crew? Tell us.
-      </p>
     </div>
 
     <div class="grid gap-8 xl:grid-cols-2">
