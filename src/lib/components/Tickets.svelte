@@ -23,18 +23,16 @@
       <Wordmark size="text-5xl sm:text-7xl" />
     </div>
     <p class="mx-auto mt-6 max-w-xl text-lg text-mist">
-      Early tickets fund the workshops. Grab one, bring a node, and help us
-      light up {conf.city} for edition {conf.edition}.
+      Tickets launch summer 2026. Drop your email and we'll let you know when they're live.
     </p>
 
     <div class="mt-10 flex flex-wrap justify-center gap-4">
-      <a
-        href={conf.ticketUrl}
-        class="group inline-flex items-center gap-3 rounded-xl bg-sky px-8 py-4 text-lg font-semibold text-void transition-all hover:bg-sky-bright"
+      <span
+        class="inline-flex cursor-not-allowed items-center gap-3 rounded-xl bg-sky/20 px-8 py-4 text-lg font-semibold text-sky/50"
+        aria-disabled="true"
       >
-        Get Tickets
-        <span class="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
-      </a>
+        Get Tickets — coming summer 2026
+      </span>
       <a
         href={conf.repoUrl}
         class="inline-flex items-center gap-3 rounded-xl border border-hair px-8 py-4 text-lg font-semibold text-fog transition-colors hover:border-sky/50 hover:text-white"

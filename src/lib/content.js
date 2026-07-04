@@ -3,7 +3,7 @@ export const conf = {
   edition: '#0',
   year: '2026',
   city: 'Prague',
-  dates: 'Spring 2026 · Prague, CZ',
+  dates: 'Autumn 2026 · Prague, CZ',
   tagline: ['Open mesh technologies.', 'Real hardware.', 'Human networks.'],
   ticketUrl: '#tickets',
   repoUrl: 'https://github.com/',
@@ -28,7 +28,7 @@ export const aboutIntro = "The LoRa mesh space is growing fast — MeshCore, Mes
 export const about = [
   {
     title: "Firmware-agnostic",
-    body: "MeshCore, Meshtastic, openHop, ZephCore — all welcome. No official firmware, no official app. Just people who build things."
+    body: "MeshCore, Meshtastic, Reticulum, ZephCore — all welcome. No official firmware, no official app. Just people who build things."
   },
   {
     title: "No single owner",
