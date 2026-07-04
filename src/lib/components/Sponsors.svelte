@@ -14,8 +14,9 @@
     <p class="-mt-8 max-w-xl text-lg leading-relaxed text-mist">
       COREconf is community-run and not-for-profit. We’re looking for companies
       and projects in mesh, radio and open hardware who want to keep tickets
-      affordable and the workshops free. In return you get a genuinely technical
-      audience of builders and operators.
+      affordable and the workshops free. Support can be money, hardware, loaner
+      gear or free samples for people building in the room. In return you get a
+      genuinely technical audience of builders and operators.
     </p>
 
     {#if sponsors.items?.length}
