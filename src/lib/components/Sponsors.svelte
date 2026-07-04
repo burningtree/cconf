@@ -7,7 +7,7 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-10">
     <SectionHeading
       index="04"
-      kicker="Sponsors"
+      kicker="Supporters"
       title="Back an open, non-profit conference."
     />
 
@@ -20,7 +20,7 @@
 
     {#if sponsors.items?.length}
       <div class="mt-12">
-        <p class="mb-5 text-sm uppercase tracking-[0.2em] text-sky/80">Example sponsors</p>
+        <p class="mb-5 text-sm uppercase tracking-[0.2em] text-sky/80">Example supporters</p>
         <ul class="grid gap-px overflow-hidden rounded-2xl border border-hair/70 bg-hair/70 sm:grid-cols-2 xl:grid-cols-4">
           {#each sponsors.items as sponsor}
             {@const Tag = sponsor.href ? 'a' : 'div'}
@@ -64,7 +64,7 @@
         class="inline-flex items-center gap-3 rounded-xl border border-sky/50 px-7 py-4
           text-lg font-semibold text-white transition-colors hover:bg-sky/10"
       >
-        Become a sponsor <span class="text-sky">↗</span>
+        Become a supporter <span class="text-sky">↗</span>
       </a>
     </div>
   </div>

@@ -14,7 +14,7 @@ export const nav = [
   { label: 'About', href: '#about' },
   { label: 'Speakers', href: '#speakers' },
   { label: 'Communities', href: '#communities' },
-  { label: 'Sponsors', href: '#sponsors' }
+  { label: 'Supporters', href: '#sponsors' }
 ];
 
 export const stats = [
@@ -169,23 +169,26 @@ export const sponsors = {
   items: [
     {
       name: 'Seeed Studio',
+      href: 'https://www.seeedstudio.com/',
       logo: 'https://avatars.githubusercontent.com/u/688117?s=280&v=4',
       focus: 'Hardware'
     },
     {
       name: 'LILYGO',
+      href: 'https://lilygo.cc/',
       logo: 'https://i0.wp.com/makerfaire.com/wp-content/uploads/gravity_forms/278-40aa7c5199fa990dfae42dc2d91a1053/2024/10/LOGO%E5%BD%A9%E8%89%B2.jpg?resize=760%2C760&strip=all&ssl=1',
       focus: 'Boards'
     },
     {
       name: 'Heltec Automation',
+      href: 'https://heltec.org/',
       logo: 'https://avatars.githubusercontent.com/u/32860573?s=280&v=4',
       focus: 'Radio hardware'
     },
     {
       name: 'You?',
       href: 'mailto:hello@coreconf.dev',
-      focus: 'Become a sponsor',
+      focus: 'Become a supporter',
       cta: true
     }
   ],
