@@ -13,6 +13,7 @@ export const conf = {
 export const nav = [
   { label: 'About', href: '#about' },
   { label: 'Speakers', href: '#speakers' },
+  { label: 'Communities', href: '#communities' },
   { label: 'Sponsors', href: '#sponsors' }
 ];
 
@@ -58,6 +59,69 @@ export const about = [
   }
 ];
 
+export const communityGroups = [
+  {
+    title: 'Projects & protocols',
+    description: 'Core projects, protocols and tools in scope for COREconf.',
+    items: [
+      {
+        name: 'MeshCore',
+        type: 'Firmware & apps',
+        href: 'https://meshcore.io/',
+        logo: 'https://avatars.githubusercontent.com/u/210668307?s=200&v=4',
+        description: 'Lightweight LoRa mesh firmware, tools and app work for practical off-grid communication.'
+      },
+      {
+        name: 'Meshtastic',
+        type: 'Open mesh project',
+        href: 'https://meshtastic.org/',
+        logo: 'https://avatars.githubusercontent.com/u/61627050?s=200&v=4',
+        description: 'A large open-source LoRa mesh community spanning devices, mobile apps, routing and field use.'
+      },
+      {
+        name: 'Reticulum',
+        type: 'Network stack',
+        href: 'https://reticulum.network/',
+        logo: 'https://reticulum.network/gfx/reticulum_logo_512.png',
+        description: 'A cryptography-based networking stack for resilient, long-range and infrastructure-light networks.'
+      },
+      {
+        name: 'Core Protocol',
+        type: 'Protocol work',
+        href: 'https://coreprotocol.org/',
+        description: 'Protocol thinking, experiments and coordination around interoperable open mesh communication.'
+      }
+    ]
+  },
+  {
+    title: 'Local meshes',
+    description: 'Local mesh communities, meetups and field crews we want around the table.',
+    items: [
+      {
+        name: 'MeshCore Czech Republic',
+        type: 'Local mesh',
+        href: 'https://meshcore.cz/',
+        flag: 'CZ',
+        description: 'Builders, operators and testers around the Czech MeshCore scene.'
+      },
+      {
+        name: 'MeshCore Switzerland',
+        type: 'Local mesh',
+        href: 'https://www.meshcore.ch/',
+        flag: 'CH',
+        description: 'Swiss MeshCore builders and field operators.'
+      },
+      {
+        name: 'MeshCore Portugal',
+        type: 'Local mesh',
+        href: 'https://www.meshcore.pt/',
+        flag: 'PT',
+        description: 'Portuguese MeshCore builders and field operators.'
+      }
+    ]
+  }
+];
+
 export const program = [
   { time: '09:00', track: 'Opening', title: 'Why mesh, why now', speaker: 'Organisers' },
   {
@@ -95,6 +159,23 @@ export const speakers = [
 ];
 
 export const sponsors = {
+  items: [
+    {
+      name: 'Seeed Studio',
+      logo: 'https://avatars.githubusercontent.com/u/688117?s=280&v=4',
+      focus: 'Hardware'
+    },
+    {
+      name: 'LILYGO',
+      logo: 'https://i0.wp.com/makerfaire.com/wp-content/uploads/gravity_forms/278-40aa7c5199fa990dfae42dc2d91a1053/2024/10/LOGO%E5%BD%A9%E8%89%B2.jpg?resize=760%2C760&strip=all&ssl=1',
+      focus: 'Boards'
+    },
+    {
+      name: 'Heltec Automation',
+      logo: 'https://avatars.githubusercontent.com/u/32860573?s=280&v=4',
+      focus: 'Radio hardware'
+    }
+  ],
   tiers: [
     { name: 'Core', slots: 2 },
     { name: 'Signal', slots: 3 },

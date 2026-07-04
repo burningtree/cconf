@@ -18,6 +18,7 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "bits-ui": "^2.18.1"
+    "bits-ui": "^2.18.1",
+    "country-flag-icons": "^1.6.20"
   }
 }

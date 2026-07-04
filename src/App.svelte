@@ -2,6 +2,7 @@
   import Nav from './lib/components/Nav.svelte';
   import Hero from './lib/components/Hero.svelte';
   import About from './lib/components/About.svelte';
+  import Communities from './lib/components/Communities.svelte';
   import Speakers from './lib/components/Speakers.svelte';
   import Sponsors from './lib/components/Sponsors.svelte';
   import Tickets from './lib/components/Tickets.svelte';
@@ -16,6 +17,7 @@
   <Hero />
   <About />
   <Speakers />
+  <Communities />
   <Sponsors />
   <Tickets />
 </main>
