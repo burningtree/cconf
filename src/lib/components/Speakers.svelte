@@ -19,10 +19,11 @@
     <SectionHeading
       index="02"
       kicker="Speakers"
-      title="The people bringing nodes to Prague."
+      title="Who's coming."
     />
     <p class="-mt-8 mb-12 max-w-xl text-mist">
-      A first wave of speakers and builders. The line-up grows as the CFP fills up.
+      A first wave of the people building the mesh — firmware authors, app makers and
+      hardware hackers. The line-up grows as the CFP fills up.
     </p>
 
     <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">

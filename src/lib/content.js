@@ -3,7 +3,7 @@ export const conf = {
   edition: '#0',
   year: '2026',
   city: 'Prague',
-  dates: 'Autumn 2026 · Prague, CZ',
+  dates: 'Autumn 2026 · Prague, Czech Republic',
   tagline: ['Open mesh technologies.', 'Real hardware.', 'Human networks.'],
   ticketUrl: '#tickets',
   repoUrl: 'https://github.com/',
@@ -20,23 +20,31 @@ export const stats = [
   { value: '2', unit: 'days', label: 'talks, workshops & field ops' },
   { value: '300+', unit: 'people', label: 'builders, operators & hackers' },
   { value: '100%', unit: 'open', label: 'open hardware & open source' },
-  { value: '1', unit: 'city', label: 'a mesh over Prague rooftops' }
+  { value: '1', unit: 'city', label: 'Prague — one live mesh over the rooftops' }
 ];
 
-export const aboutIntro = "The LoRa mesh space is growing fast — MeshCore, Meshtastic, Reticulum, a dozen firmware forks — each with their own community and no shared forum. COREconf is an attempt to fix that. Get the people actually building this stuff into one room, compare notes, and figure out where the ecosystem is going.";
+export const aboutIntro = "The LoRa mesh space is growing fast — MeshCore, Meshtastic, Reticulum, a dozen firmware forks — each with their own community and no shared forum. COREconf is an attempt to fix that. Get the people actually building this stuff into one room, put a pile of hardware on the table, and figure out where the ecosystem is going. Expect a lot of nodes, a live mesh over the city, and a good time.";
 
 export const about = [
   {
+    icon: "cpu",
+    title: "Bring your nodes",
+    body: "Boards, antennas, weird prototypes, half-finished builds — bring them. Swap gear, compare setups, and light up a live mesh across the room and the city."
+  },
+  {
+    icon: "layers",
     title: "Firmware-agnostic",
     body: "MeshCore, Meshtastic, Reticulum, ZephCore — all welcome. No official firmware, no official app. Just people who build things."
   },
   {
+    icon: "users",
     title: "No single owner",
     body: "COREconf is independent. Not affiliated with any project, company or working group. Anyone can participate, anyone can speak."
   },
   {
+    icon: "flask",
     title: "Edition zero",
-    body: "This is the first one. Rough edges expected. Real conversations over polished presentations."
+    body: "This is the first one. Rough edges expected. More hallway hacking and hands-on than polished slide decks."
   }
 ];
 

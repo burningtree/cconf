@@ -160,6 +160,19 @@
   link: https://github.com/kybl
   avatar: https://avatars.githubusercontent.com/u/246587?v=4
 
+- name: Václav Pavlín
+  handle: vpavlin
+  role: Logos · logos-fieldkit
+  bio: Author of logos-fieldkit, a self-contained LoRa mesh field node.
+  link: https://github.com/vpavlin
+  avatar: https://pbs.twimg.com/profile_images/760222053056274432/MwKmK4J7_400x400.jpg
+
+- name: Jindřich Skácel
+  role: MeshCore enthusiast
+  bio: Local MeshCore enthusiast.
+  link: https://www.linkedin.com/in/jindrichskacel/
+  avatar: https://media.licdn.com/dms/image/v2/C5603AQGEnk4fWzAS3Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517680678660?e=2147483647&v=beta&t=58R6hNG-jTixZibDbhdS42r-d9qw7_YsY4sWkSbvlbE
+
 - name: You?
   role: The CFP is open — come speak
   link: mailto:hello@coreconf.dev
