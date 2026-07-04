@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,600;0,800;1,800;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Kanit', 'Space Grotesk', sans-serif;
+
+  --color-void: #060a10;
+  --color-ink: #0a0f16;
+  --color-panel: #0d141e;
+  --color-hair: #1b2530;
+
+  --color-mist: #8ea0b5;
+  --color-fog: #b9c6d6;
+
+  --color-sky: #4ec3ef;
+  --color-sky-bright: #7ad4f5;
+  --color-sky-deep: #2b9fd4;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--color-void);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-fog);
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    background: var(--color-sky);
+    color: var(--color-void);
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: var(--color-void);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-hair);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2a3a4a;
+  }
+}
+
+/* The CORE wordmark — heavy, condensed, slanted, MeshCore-flavoured. */
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: -0.02em;
+  transform: skewX(-4deg);
+  display: inline-block;
+}
+
+/* Subtle scanning-signal ring animation reused around the site */
+@keyframes ping-ring {
+  0% {
+    transform: scale(0.6);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rise {
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+}

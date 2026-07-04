@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="swirl" cx="62%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#bfe4f5" stop-opacity="0.9"/>
+      <stop offset="22%" stop-color="#6fb6d8" stop-opacity="0.55"/>
+      <stop offset="55%" stop-color="#2a5f7d" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#060a10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0c1a26"/>
+      <stop offset="60%" stop-color="#0a1420"/>
+      <stop offset="100%" stop-color="#060a10"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16303f"/>
+      <stop offset="100%" stop-color="#070d14"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="1000" fill="url(#sky)"/>
+  <ellipse cx="740" cy="420" rx="560" ry="520" fill="url(#swirl)"/>
+
+  <!-- concentric signal rings -->
+  <g stroke="#8fd4f0" fill="none" opacity="0.28">
+    <circle cx="740" cy="430" r="120" stroke-width="1.4"/>
+    <circle cx="740" cy="430" r="200" stroke-width="1.2" opacity="0.8"/>
+    <circle cx="740" cy="430" r="290" stroke-width="1" opacity="0.6"/>
+    <circle cx="740" cy="430" r="390" stroke-width="0.9" opacity="0.4"/>
+    <circle cx="740" cy="430" r="500" stroke-width="0.8" opacity="0.25"/>
+  </g>
+
+  <!-- swirling star-streaks -->
+  <g stroke="#dff2fb" opacity="0.5">
+    <path d="M470 210 Q760 120 1030 300" fill="none" stroke-width="1"/>
+    <path d="M430 330 Q770 210 1080 470" fill="none" stroke-width="0.8" opacity="0.7"/>
+    <path d="M500 560 Q800 700 1090 560" fill="none" stroke-width="0.7" opacity="0.5"/>
+  </g>
+
+  <!-- city silhouette -->
+  <path d="M0 1000 L0 820 L120 830 L170 800 L230 815 L260 760 L300 815 L360 820
+           L420 790 L470 815 L520 835 L600 830 L640 812 L690 830 L760 835
+           L820 815 L900 828 L980 800 L1040 822 L1120 812 L1200 828 L1200 1000 Z"
+        fill="url(#city)"/>
+
+  <!-- radio / TV tower -->
+  <g stroke="#0c1620" stroke-width="3" fill="none">
+    <path d="M735 250 L720 835 M735 250 L750 835"/>
+    <path d="M726 420 L744 420 M722 520 L748 520 M718 620 L752 620 M712 720 L758 720"/>
+    <path d="M735 250 L722 420 L744 420 Z" opacity="0.6"/>
+  </g>
+  <circle cx="735" cy="240" r="9" fill="#bfe4f5"/>
+  <circle cx="735" cy="240" r="20" fill="none" stroke="#bfe4f5" stroke-width="1" opacity="0.5"/>
+
+  <!-- city glow -->
+  <ellipse cx="820" cy="880" rx="360" ry="70" fill="#6fb6d8" opacity="0.12"/>
+</svg>
