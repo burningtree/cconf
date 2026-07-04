@@ -9,9 +9,6 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-  "pnpm": {
-    "onlyBuiltDependencies": ["esbuild"]
-  },
   "devDependencies": {
     "@rollup/plugin-yaml": "^5.0.0",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",

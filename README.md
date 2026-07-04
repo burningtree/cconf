@@ -10,10 +10,10 @@ Built with **Svelte 5** (runes) + **Tailwind CSS v4** + **Vite**.
 ## Develop
 
 ```bash
-pnpm install
-pnpm dev        # http://localhost:5175
-pnpm build      # static output in dist/
-pnpm preview
+npm install
+npm run dev      # http://localhost:5175
+npm run build    # static output in dist/
+npm run preview
 ```
 
 ## Content
