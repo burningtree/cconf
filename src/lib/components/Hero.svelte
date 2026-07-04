@@ -1,17 +1,19 @@
 <script>
   import Wordmark from './Wordmark.svelte';
   import { conf } from '../content.js';
+
+  const base = import.meta.env.BASE_URL;
 </script>
 
 <section id="top" class="relative min-h-screen overflow-hidden bg-void">
   <!-- Backdrop image. Swap /static/backdrop.png to change it. -->
   <div class="absolute inset-0">
     <img
-      src="/backdrop.png"
+      src={`${base}backdrop.png`}
       alt=""
       aria-hidden="true"
       class="h-full w-full object-cover object-right"
-      onerror={(e) => (e.currentTarget.src = '/hero.svg')}
+      onerror={(e) => (e.currentTarget.src = `${base}hero.svg`)}
     />
     <!-- Left-to-right fade so text stays readable over any image -->
     <div class="absolute inset-0 bg-gradient-to-r from-void via-void/85 to-void/10"></div>

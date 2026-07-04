@@ -17,19 +17,29 @@ export const nav = [
 ];
 
 export const stats = [
-  { value: '2', unit: 'days', label: 'talks, workshops & field ops' },
+  { value: '2', unit: 'days', label: 'talks, workshops & hands-on sessions' },
   { value: '300+', unit: 'people', label: 'builders, operators & hackers' },
   { value: '100%', unit: 'open', label: 'open hardware & open source' },
-  { value: '1', unit: 'city', label: 'Prague — one live mesh over the rooftops' }
+  { value: '1', unit: 'city', label: 'Prague — builders from across the mesh scene' }
 ];
 
-export const aboutIntro = "The LoRa mesh space is growing fast — MeshCore, Meshtastic, Reticulum, a dozen firmware forks — each with their own community and no shared forum. COREconf is an attempt to fix that. Get the people actually building this stuff into one room, put a pile of hardware on the table, and figure out where the ecosystem is going. Expect a lot of nodes, a live mesh over the city, and a good time.";
+export const aboutIntro = [
+  { text: 'The ' },
+  { text: 'LoRa', href: 'https://lora-alliance.org/' },
+  { text: ' mesh space is growing fast — ' },
+  { text: 'MeshCore', href: 'https://meshcore.io/' },
+  { text: ', ' },
+  { text: 'Meshtastic', href: 'https://meshtastic.org/' },
+  { text: ', ' },
+  { text: 'Reticulum', href: 'https://reticulum.network/' },
+  { text: ', a dozen firmware forks — each with their own community and no shared forum. COREconf is an attempt to fix that. Get the people actually building this stuff into one room, put a pile of hardware on the table, and figure out where the ecosystem is going. Expect a lot of nodes, practical demos, and a good time.' }
+];
 
 export const about = [
   {
     icon: "cpu",
     title: "Bring your nodes",
-    body: "Boards, antennas, weird prototypes, half-finished builds — bring them. Swap gear, compare setups, and light up a live mesh across the room and the city."
+    body: "Boards, antennas, weird prototypes, half-finished builds — bring them. Swap gear, compare setups, and get devices talking in the room."
   },
   {
     icon: "layers",
@@ -70,8 +80,8 @@ export const program = [
   },
   {
     time: '16:00',
-    track: 'Field op',
-    title: 'City-wide range test across Prague rooftops',
+    track: 'Workshop',
+    title: 'Range, antennas and field notes',
     speaker: 'Everyone'
   },
   { time: '19:00', track: 'Social', title: 'Nodes & pilsner', speaker: 'The bar' }

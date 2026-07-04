@@ -16,7 +16,7 @@
     <SectionHeading
       index="02"
       kicker="Program"
-      title="One day. Talks, solder fumes and a live mesh."
+      title="One day. Talks, solder fumes and hands-on mesh."
     />
     <p class="-mt-8 mb-12 max-w-xl text-mist">
       Draft schedule for edition #0. Times and titles will shift as the CFP closes.
