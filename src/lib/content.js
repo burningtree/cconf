@@ -32,7 +32,7 @@ export const aboutIntro = [
   { text: 'Meshtastic', href: 'https://meshtastic.org/' },
   { text: ', ' },
   { text: 'Reticulum', href: 'https://reticulum.network/' },
-  { text: ', a dozen firmware forks — each with their own community and no shared forum. COREconf is an attempt to fix that. Get the people actually building this stuff into one room, put a pile of hardware on the table, and figure out where the ecosystem is going. Expect a lot of nodes, practical demos, and a good time.' }
+  { text: ', and a growing family of forks and experiments, each with its own community and point of view. COREconf is a place to bring those threads together: get the people actually building this stuff into one room, put a pile of hardware on the table, and figure out where the ecosystem is going. Expect a lot of nodes, practical demos, and a good time.' }
 ];
 
 export const about = [

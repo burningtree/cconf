@@ -1,5 +1,6 @@
 <script>
   import SectionHeading from './SectionHeading.svelte';
+  import RippleOverlay from './RippleOverlay.svelte';
   import { conf } from '../content.js';
   import people from '../speakers.yaml';
 
@@ -60,9 +61,11 @@
                 </div>
               {/if}
 
+              <RippleOverlay />
+
               {#if p.link}
                 <span
-                  class="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-lg
+                  class="absolute right-3 top-3 z-10 grid h-8 w-8 place-items-center rounded-lg
                     bg-void/60 text-sky opacity-0 backdrop-blur transition-opacity group-hover:opacity-100"
                   aria-hidden="true"
                 >↗</span>
