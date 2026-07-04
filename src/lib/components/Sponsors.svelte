@@ -21,21 +21,37 @@
     {#if sponsors.items?.length}
       <div class="mt-12">
         <p class="mb-5 text-sm uppercase tracking-[0.2em] text-sky/80">Example sponsors</p>
-        <ul class="grid gap-px overflow-hidden rounded-2xl border border-hair/70 bg-hair/70 sm:grid-cols-3">
+        <ul class="grid gap-px overflow-hidden rounded-2xl border border-hair/70 bg-hair/70 sm:grid-cols-2 xl:grid-cols-4">
           {#each sponsors.items as sponsor}
-            <li class="group bg-ink p-5 transition-colors hover:bg-panel/70">
-              <div class="grid h-52 place-items-center rounded-xl border border-hair/70 bg-white p-4 sm:h-56">
-                <img
-                  src={sponsor.logo}
-                  alt={sponsor.name}
-                  loading="lazy"
-                  class="h-40 w-full object-contain grayscale transition duration-300 group-hover:grayscale-0 sm:h-44"
-                />
+            {@const Tag = sponsor.href ? 'a' : 'div'}
+            <li class="bg-ink">
+            <svelte:element
+              this={Tag}
+              href={sponsor.href}
+              target={sponsor.href && !sponsor.href.startsWith('mailto') ? '_blank' : undefined}
+              rel={sponsor.href && !sponsor.href.startsWith('mailto') ? 'noreferrer' : undefined}
+              class="group block h-full p-5 transition-colors hover:bg-panel/70"
+            >
+              <div
+                class="grid h-52 place-items-center rounded-xl border p-4 sm:h-56
+                  {sponsor.cta ? 'border-sky/50 border-dashed bg-sky/5' : 'border-hair/70 bg-white'}"
+              >
+                {#if sponsor.cta}
+                  <span class="text-5xl font-light text-sky">+</span>
+                {:else}
+                  <img
+                    src={sponsor.logo}
+                    alt={sponsor.name}
+                    loading="lazy"
+                    class="h-40 w-full object-contain grayscale transition duration-300 group-hover:grayscale-0 sm:h-44"
+                  />
+                {/if}
               </div>
               <div class="mt-5">
-                <h3 class="text-lg font-semibold text-white">{sponsor.name}</h3>
+                <h3 class="text-lg font-semibold text-white {sponsor.cta ? 'text-sky' : ''}">{sponsor.name}</h3>
                 <p class="mt-1 text-xs uppercase tracking-[0.18em] text-sky/75">{sponsor.focus}</p>
               </div>
+            </svelte:element>
             </li>
           {/each}
         </ul>

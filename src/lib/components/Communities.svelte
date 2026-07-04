@@ -37,9 +37,9 @@
 
     <div class="-mt-8 mb-12 grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1fr)] lg:items-end">
       <p class="max-w-2xl text-lg leading-relaxed text-mist">
-        COREconf is focused on the open mesh projects, protocols, tools and
-        local crews shaping this space. Some are confirmed in the room, some are
-        areas we want to connect with as the programme grows.
+        COREconf is an invitation to the communities building open mesh. We want
+        project maintainers, local operators and field crews to take part through
+        talks, workshops, demos and hard-won experience from real deployments.
       </p>
     </div>
 
@@ -49,7 +49,7 @@
           <div class="border-b border-hair/70 p-6 sm:p-7">
             <div class="flex items-baseline justify-between gap-4">
               <h3 class="text-2xl font-semibold text-white">{group.title}</h3>
-              <span class="text-sm text-sky">{group.items.length}</span>
+              <span class="text-sm text-sky">{group.items.filter((item) => !item.cta).length}</span>
             </div>
             <p class="mt-3 max-w-2xl text-sm leading-relaxed text-mist">{group.description}</p>
           </div>
@@ -61,13 +61,14 @@
                 <svelte:element
                   this={Tag}
                   href={community.href}
-                  target={community.href ? '_blank' : undefined}
-                  rel={community.href ? 'noreferrer' : undefined}
-                  class="group grid gap-4 p-5 transition-colors hover:bg-panel/60 sm:grid-cols-[3.5rem_1fr_auto] sm:p-6"
+                  target={community.href && !community.href.startsWith('mailto') ? '_blank' : undefined}
+                  rel={community.href && !community.href.startsWith('mailto') ? 'noreferrer' : undefined}
+                  class="group grid gap-4 p-5 transition-colors hover:bg-panel/60 sm:grid-cols-[3.5rem_1fr_auto] sm:p-6
+                    {community.cta ? 'bg-sky/5' : ''}"
                 >
                   <div
                     class="grid h-12 w-12 overflow-hidden rounded-lg border text-sm font-semibold text-sky
-                      {community.logo || community.flag ? 'border-hair/70 bg-panel' : 'border-sky/30 bg-sky/10'}"
+                      {community.logo || community.flag ? 'border-hair/70 bg-panel' : community.cta ? 'border-sky/40 border-dashed bg-sky/10' : 'border-sky/40 bg-sky/10'}"
                   >
                     {#if community.logo}
                       <img
@@ -83,6 +84,8 @@
                         loading="lazy"
                         class="h-full w-full object-cover grayscale transition duration-300 group-hover:grayscale-0"
                       />
+                    {:else if community.cta}
+                      <span class="place-self-center text-2xl font-light">+</span>
                     {:else}
                       <span class="place-self-center">{initials(community.name)}</span>
                     {/if}
@@ -98,7 +101,7 @@
                     <p class="mt-2 text-sm leading-relaxed text-mist">{community.description}</p>
                   </div>
 
-                  {#if community.href}
+                  {#if community.href && !community.cta}
                     <span
                       class="grid h-9 w-9 place-items-center rounded-lg border border-hair text-sky transition-all group-hover:border-sky/40 group-hover:bg-sky/10 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                       aria-hidden="true"

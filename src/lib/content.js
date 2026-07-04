@@ -62,7 +62,7 @@ export const about = [
 export const communityGroups = [
   {
     title: 'Projects & protocols',
-    description: 'Core projects, protocols and tools in scope for COREconf.',
+    description: 'Projects and protocol communities we would like to have actively involved in the programme.',
     items: [
       {
         name: 'MeshCore',
@@ -95,7 +95,7 @@ export const communityGroups = [
   },
   {
     title: 'Local meshes',
-    description: 'Local mesh communities, meetups and field crews we want around the table.',
+    description: 'Local mesh communities we would like to hear from on stage, in workshops and in hallway sessions.',
     items: [
       {
         name: 'MeshCore Czech Republic',
@@ -117,6 +117,13 @@ export const communityGroups = [
         href: 'https://www.meshcore.pt/',
         flag: 'PT',
         description: 'Portuguese MeshCore builders and field operators.'
+      },
+      {
+        name: 'Your local mesh?',
+        type: 'Add yours',
+        href: 'mailto:hello@coreconf.dev',
+        cta: true,
+        description: 'Running a local mesh community? Come speak, demo, teach or share field notes.'
       }
     ]
   }
@@ -174,6 +181,12 @@ export const sponsors = {
       name: 'Heltec Automation',
       logo: 'https://avatars.githubusercontent.com/u/32860573?s=280&v=4',
       focus: 'Radio hardware'
+    },
+    {
+      name: 'You?',
+      href: 'mailto:hello@coreconf.dev',
+      focus: 'Become a sponsor',
+      cta: true
     }
   ],
   tiers: [
