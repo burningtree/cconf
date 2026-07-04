@@ -1,8 +1,19 @@
 <script>
   import Wordmark from './Wordmark.svelte';
+  import RFDistort from './RFDistort.svelte';
+  import RFControls from './RFControls.svelte';
   import { conf } from '../content.js';
+  import { loraProfile } from '../lora.js';
 
   const base = import.meta.env.BASE_URL;
+
+  // LoRa transmitter config (MeshCore-style defaults) → radio profile.
+  // Kept as strings for the bits-ui selects; converted for the math.
+  let bw = $state('62.5');
+  let sf = $state('7');
+  let cr = $state('4/5');
+  let payload = $state('64');
+  let profile = $derived(loraProfile(Number(bw), Number(sf), cr, Number(payload)));
 </script>
 
 <section id="top" class="relative min-h-screen overflow-hidden bg-void">
@@ -12,13 +23,18 @@
       src={`${base}backdrop.png`}
       alt=""
       aria-hidden="true"
-      class="h-full w-full object-cover object-right"
+      class="h-full w-full object-cover object-right contrast-115"
       onerror={(e) => (e.currentTarget.src = `${base}hero.svg`)}
     />
+    <!-- WebGL layer: LoRa broadcast waves warp the backdrop pixels -->
+    <RFDistort {profile} />
     <!-- Left-to-right fade so text stays readable over any image -->
     <div class="absolute inset-0 bg-gradient-to-r from-void via-void/85 to-void/10"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-void/40"></div>
   </div>
+
+  <!-- LoRa monitor + waterfall + transmitter controls (bottom-right cluster) -->
+  <RFControls bind:bw bind:sf bind:cr bind:payload {profile} />
 
   <div class="relative mx-auto flex min-h-screen max-w-7xl flex-col justify-center px-6 pt-28 pb-16 lg:px-10">
     <div class="max-w-2xl">
