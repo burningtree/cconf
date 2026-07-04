@@ -35,13 +35,11 @@
       title="Communities around the table."
     />
 
-    <div class="-mt-8 mb-12 grid gap-8 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1fr)] lg:items-end">
-      <p class="max-w-2xl text-lg leading-relaxed text-mist">
-        COREconf is an invitation to the communities building open mesh. We want
-        project maintainers, local operators and field crews to take part through
-        talks, workshops, demos and hard-won experience from real deployments.
-      </p>
-    </div>
+    <p class="-mt-8 mb-12 max-w-2xl text-lg leading-relaxed text-mist">
+      COREconf is an invitation to the communities building open mesh. We want
+      project maintainers, local operators and field crews to take part through
+      talks, workshops, demos and hard-won experience from real deployments.
+    </p>
 
     <div class="grid gap-8 xl:grid-cols-2">
       {#each communityGroups as group}
@@ -54,7 +52,7 @@
             <p class="mt-3 max-w-2xl text-sm leading-relaxed text-mist">{group.description}</p>
           </div>
 
-          <ul class="divide-y divide-hair/70">
+          <ul class="divide-y divide-hair/60">
             {#each group.items as community}
               {@const Tag = community.href ? 'a' : 'div'}
               <li>
@@ -117,7 +115,7 @@
       {/each}
     </div>
 
-    <p class="mt-10 text-mist">
+    <p class="mt-12 text-mist">
       Missing a community?
       <a href="mailto:{conf.email}" class="text-sky underline-offset-4 hover:underline">{conf.email}</a>
     </p>

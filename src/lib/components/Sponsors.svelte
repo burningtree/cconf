@@ -3,7 +3,7 @@
   import { conf, sponsors } from '../content.js';
 </script>
 
-<section id="sponsors" class="border-t border-hair/60 bg-void py-24 sm:py-32">
+<section id="sponsors" class="border-t border-hair/60 bg-ink py-24 sm:py-32">
   <div class="mx-auto max-w-7xl px-6 lg:px-10">
     <SectionHeading
       index="04"
@@ -11,7 +11,7 @@
       title="Back an open, non-profit conference."
     />
 
-    <p class="-mt-8 max-w-xl text-lg leading-relaxed text-mist">
+    <p class="-mt-8 mb-12 max-w-2xl text-lg leading-relaxed text-mist">
       COREconf is community-run and not-for-profit. We’re looking for companies
       and projects in mesh, radio and open hardware who want to keep tickets
       affordable and the workshops free. Support can be money, hardware, loaner
@@ -20,7 +20,7 @@
     </p>
 
     {#if sponsors.items?.length}
-      <div class="mt-12">
+      <div>
         <p class="mb-5 text-sm uppercase tracking-[0.2em] text-sky/80">Example supporters</p>
         <ul class="grid gap-px overflow-hidden rounded-2xl border border-hair/70 bg-hair/70 sm:grid-cols-2 xl:grid-cols-4">
           {#each sponsors.items as sponsor}
