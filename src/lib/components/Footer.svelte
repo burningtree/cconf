@@ -15,7 +15,7 @@
           communication and the people who build it.
         </p>
         <p class="mt-4 text-mist">
-          {conf.dates}
+          {conf.datesPlace}
         </p>
       </div>
 

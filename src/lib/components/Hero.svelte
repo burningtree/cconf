@@ -40,7 +40,7 @@
     <div class="max-w-2xl">
       <div class="rise flex items-center gap-3 text-3xl" style="animation-delay: 0ms">
         <span class="font-semibold text-sky">{conf.edition}</span>
-        <span class="text-mist">/ {conf.year}</span>
+        <span class="text-mist">/ {conf.dates}</span>
       </div>
       <div class="rise mt-4 h-px w-16 bg-hair" style="animation-delay: 60ms"></div>
 

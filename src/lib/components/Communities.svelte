@@ -41,18 +41,12 @@
       talks, workshops, demos and hard-won experience from real deployments.
     </p>
 
-    <div class="grid gap-8 xl:grid-cols-2">
+    <div class="grid gap-x-16 gap-y-12 md:grid-cols-2">
       {#each communityGroups as group}
-        <section class="overflow-hidden rounded-2xl border border-hair/70 bg-ink">
-          <div class="border-b border-hair/70 p-6 sm:p-7">
-            <div class="flex items-baseline justify-between gap-4">
-              <h3 class="text-2xl font-semibold text-white">{group.title}</h3>
-              <span class="text-sm text-sky">{group.items.filter((item) => !item.cta).length}</span>
-            </div>
-            <p class="mt-3 max-w-2xl text-sm leading-relaxed text-mist">{group.description}</p>
-          </div>
+        <div>
+          <h3 class="text-sm font-semibold uppercase tracking-[0.18em] text-sky">{group.title}</h3>
 
-          <ul class="divide-y divide-hair/60">
+          <ul class="mt-6 divide-y divide-hair/50 border-t border-hair/50">
             {#each group.items as community}
               {@const Tag = community.href ? 'a' : 'div'}
               <li>
@@ -61,57 +55,33 @@
                   href={community.href}
                   target={community.href && !community.href.startsWith('mailto') ? '_blank' : undefined}
                   rel={community.href && !community.href.startsWith('mailto') ? 'noreferrer' : undefined}
-                  class="group grid gap-4 p-5 transition-colors hover:bg-panel/60 sm:grid-cols-[3.5rem_1fr_auto] sm:p-6
-                    {community.cta ? 'bg-sky/5' : ''}"
+                  class="group flex items-center gap-4 py-4"
                 >
-                  <div
-                    class="grid h-12 w-12 overflow-hidden rounded-lg border text-sm font-semibold text-sky
-                      {community.logo || community.flag ? 'border-hair/70 bg-panel' : community.cta ? 'border-sky/40 border-dashed bg-sky/10' : 'border-sky/40 bg-sky/10'}"
-                  >
+                  <div class="grid h-10 w-10 shrink-0 overflow-hidden rounded-md text-xs font-semibold text-sky">
                     {#if community.logo}
-                      <img
-                        src={community.logo}
-                        alt=""
-                        loading="lazy"
-                        class="h-full w-full object-cover grayscale transition duration-300 group-hover:grayscale-0"
-                      />
+                      <img src={community.logo} alt="" loading="lazy" class="h-full w-full object-cover" />
                     {:else if community.flag}
-                      <img
-                        src={flagSrc(community.flag)}
-                        alt=""
-                        loading="lazy"
-                        class="h-full w-full object-cover grayscale transition duration-300 group-hover:grayscale-0"
-                      />
+                      <img src={flagSrc(community.flag)} alt="" loading="lazy" class="h-full w-full object-cover" />
                     {:else if community.cta}
-                      <span class="place-self-center text-2xl font-light">+</span>
+                      <span class="place-self-center text-xl font-light text-mist">+</span>
                     {:else}
-                      <span class="place-self-center">{initials(community.name)}</span>
+                      <span class="place-self-center rounded-md bg-sky/10 p-2">{initials(community.name)}</span>
                     {/if}
                   </div>
 
-                  <div>
-                    <div class="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                      <h4 class="text-lg font-semibold text-white group-hover:text-sky">
-                        {community.name}
-                      </h4>
-                      <span class="text-xs uppercase tracking-[0.18em] text-sky/75">{community.type}</span>
-                    </div>
-                    <p class="mt-2 text-sm leading-relaxed text-mist">{community.description}</p>
+                  <div class="min-w-0 flex-1">
+                    <h4 class="text-base font-semibold text-white group-hover:text-sky">{community.name}</h4>
+                    <p class="text-sm text-mist">{community.type}</p>
                   </div>
 
-                  {#if community.href && !community.cta}
-                    <span
-                      class="grid h-9 w-9 place-items-center rounded-lg border border-hair text-sky transition-all group-hover:border-sky/40 group-hover:bg-sky/10 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                      aria-hidden="true"
-                    >
-                      ↗
-                    </span>
+                  {#if community.href}
+                    <span class="text-mist transition group-hover:text-sky" aria-hidden="true">↗</span>
                   {/if}
                 </svelte:element>
               </li>
             {/each}
           </ul>
-        </section>
+        </div>
       {/each}
     </div>
 

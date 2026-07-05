@@ -2,8 +2,9 @@
 export const conf = {
   edition: '#0',
   year: '2026',
-  city: 'Prague',
-  dates: 'Autumn 2026 · Prague, Czech Republic',
+  city: 'Brno',
+  dates: 'October 10-11, 2026',
+  datesPlace: 'October 10-11, 2026 · Brno, Czech Republic',
   tagline: ['Open mesh technologies.', 'Real hardware.', 'Human networks.'],
   ticketUrl: '#tickets',
   repoUrl: 'https://github.com/',
@@ -19,7 +20,7 @@ export const nav = [
 
 export const stats = [
   { value: '2', unit: 'days', label: 'talks, workshops & hands-on sessions' },
-  { value: '300+', unit: 'people', label: 'builders, operators & hackers' },
+  { value: '200+', unit: 'people', label: 'builders, operators & hackers' },
   { value: '100%', unit: 'open', label: 'open hardware & open source' },
   { value: '1', unit: 'city', label: 'Prague — builders from across the mesh scene' }
 ];
@@ -104,7 +105,7 @@ export const communityGroups = [
         flag: 'CZ',
         description: 'Builders, operators and testers around the Czech MeshCore scene.'
       },
-      {
+      /*{
         name: 'MeshCore Switzerland',
         type: 'Local mesh',
         href: 'https://www.meshcore.ch/',
@@ -117,7 +118,7 @@ export const communityGroups = [
         href: 'https://www.meshcore.pt/',
         flag: 'PT',
         description: 'Portuguese MeshCore builders and field operators.'
-      },
+      },*/
       {
         name: 'Your local mesh?',
         type: 'Add yours',
@@ -167,7 +168,7 @@ export const speakers = [
 
 export const sponsors = {
   items: [
-    {
+    /*{
       name: 'Seeed Studio',
       href: 'https://www.seeedstudio.com/',
       logo: 'https://avatars.githubusercontent.com/u/688117?s=280&v=4',
@@ -190,7 +191,7 @@ export const sponsors = {
       href: 'mailto:hello@coreconf.dev',
       focus: 'Become a supporter',
       cta: true
-    }
+    }*/
   ],
   tiers: [
     { name: 'Core', slots: 2 },

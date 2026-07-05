@@ -8,66 +8,66 @@
 #   link:   Optional URL (site, GitHub, Mastodon, etc.)
 #   avatar: Optional image URL or /static path. Falls back to initials.
 
-- name: Olivier Seller
-  role: LoRa Alliance · Technical Committee
-  bio: LoRa co-inventor.
-  link: https://fr.linkedin.com/in/olivier-seller-527909
-  avatar: https://media.licdn.com/dms/image/v2/C4D03AQHOv6wqbuKPMA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516260893458?e=2147483647&v=beta&t=Hz6JwZ8AzAxvCgb2LWATzSWH92QU5icraFQsErioXCs
+# - name: Olivier Seller
+#   role: LoRa Alliance · Technical Committee
+#   bio: LoRa co-inventor.
+#   link: https://fr.linkedin.com/in/olivier-seller-527909
+#   avatar: https://media.licdn.com/dms/image/v2/C4D03AQHOv6wqbuKPMA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1516260893458?e=2147483647&v=beta&t=Hz6JwZ8AzAxvCgb2LWATzSWH92QU5icraFQsErioXCs
 
-- name: Jan Gromeš
-  handle: jgromes
-  role: RadioLib
-  bio: Open-source radio library for the LoRa ecosystem.
-  link: https://github.com/jgromes
-  avatar: https://media.licdn.com/dms/image/v2/D4D03AQGpPzkI41fPKw/profile-displayphoto-scale_200_200/B4DZw55q0YHEAY-/0/1770497950323?e=2147483647&v=beta&t=_cEDVXEj31MkFRqQERgTeFeKNhzUXnMNwFJbH7cDUus
+# - name: Jan Gromeš
+#   handle: jgromes
+#   role: RadioLib
+#   bio: Open-source radio library for the LoRa ecosystem.
+#   link: https://github.com/jgromes
+#   avatar: https://media.licdn.com/dms/image/v2/D4D03AQGpPzkI41fPKw/profile-displayphoto-scale_200_200/B4DZw55q0YHEAY-/0/1770497950323?e=2147483647&v=beta&t=_cEDVXEj31MkFRqQERgTeFeKNhzUXnMNwFJbH7cDUus
 
-- name: Scott Powell
-  handle: ripplebiz
-  role: MeshCore · Lead firmware · Ripple
-  bio: MeshCore project founder.
-  link: https://x.com/ripple_biz
-  avatar: https://cdn.discordapp.com/avatars/1293506270955049083/7fd696c9d7ceb3dea9702bde48e10528.webp?size=240
+# - name: Scott Powell
+#   handle: ripplebiz
+#   role: MeshCore · Lead firmware · Ripple
+#   bio: MeshCore project founder.
+#   link: https://x.com/ripple_biz
+#   avatar: https://cdn.discordapp.com/avatars/1293506270955049083/7fd696c9d7ceb3dea9702bde48e10528.webp?size=240
 
-- name: markqvist
-  handle: markqvist
-  role: Reticulum
-  bio: Cryptography-based networking stack for resilient wide-area mesh.
-  link: https://unsigned.io/
-  avatar: https://avatars.githubusercontent.com/u/1438012?v=4
+# - name: markqvist
+#   handle: markqvist
+#   role: Reticulum
+#   bio: Cryptography-based networking stack for resilient wide-area mesh.
+#   link: https://unsigned.io/
+#   avatar: https://avatars.githubusercontent.com/u/1438012?v=4
 
-- name: Ben Meadors
-  handle: thebentern
-  role: Meshtastic · Device firmware
-  bio: Device firmware development lead.
-  link: https://github.com/thebentern
-  avatar: https://avatars.githubusercontent.com/u/9000580?v=4
+# - name: Ben Meadors
+#   handle: thebentern
+#   role: Meshtastic · Device firmware
+#   bio: Device firmware development lead.
+#   link: https://github.com/thebentern
+#   avatar: https://avatars.githubusercontent.com/u/9000580?v=4
 
-- name: liquidraver
-  role: ZephCore
-  bio: MeshCore port to the Zephyr RTOS.
-  link: https://github.com/liquidraver
-  avatar: https://avatars.githubusercontent.com/u/504870?v=4
+# - name: liquidraver
+#   role: ZephCore
+#   bio: MeshCore port to the Zephyr RTOS.
+#   link: https://github.com/liquidraver
+#   avatar: https://avatars.githubusercontent.com/u/504870?v=4
 
-- name: Liam Cottle
-  handle: liamcottle
-  role: MeshCore App
-  bio: MeshCore app and getting-started guides.
-  link: https://github.com/liamcottle
-  avatar: https://avatars.githubusercontent.com/u/3173581?v=4
+# - name: Liam Cottle
+#   handle: liamcottle
+#   role: MeshCore App
+#   bio: MeshCore app and getting-started guides.
+#   link: https://github.com/liamcottle
+#   avatar: https://avatars.githubusercontent.com/u/3173581?v=4
 
-- name: "0xded"
-  handle: "0xded"
-  role: Core Protocol Working Group
-  bio: Behind coreprotocol.org.
-  link: https://0xded.dev/
-  avatar: https://0xded.dev/assets/skull.png
+# - name: "0xded"
+#   handle: "0xded"
+#   role: Core Protocol Working Group
+#   bio: Behind coreprotocol.org.
+#   link: https://0xded.dev/
+#   avatar: https://0xded.dev/assets/skull.png
 
-- name: GUVWAF
-  handle: GUVWAF
-  role: Meshtastic · Routing lead
-  bio: Next-hop routing and mesh-algorithm development.
-  link: https://github.com/GUVWAF
-  avatar: https://avatars.githubusercontent.com/u/78759985?v=4
+# - name: GUVWAF
+#   handle: GUVWAF
+#   role: Meshtastic · Routing lead
+#   bio: Next-hop routing and mesh-algorithm development.
+#   link: https://github.com/GUVWAF
+#   avatar: https://avatars.githubusercontent.com/u/78759985?v=4
 
 - name: Rastislav Vysoký
   handle: recrof
@@ -76,82 +76,82 @@
   link: https://github.com/recrof
   avatar: https://avatars.githubusercontent.com/u/1572066?v=4
 
-- name: Jonathan Bennett
-  handle: jp-bennett
-  role: Meshtastic · Linux & Security
-  bio: Linux-native Meshtastic, crypto and protocol security.
-  link: https://github.com/jp-bennett
-  avatar: https://avatars.githubusercontent.com/u/5630967?v=4
+# - name: Jonathan Bennett
+#   handle: jp-bennett
+#   role: Meshtastic · Linux & Security
+#   bio: Linux-native Meshtastic, crypto and protocol security.
+#   link: https://github.com/jp-bennett
+#   avatar: https://avatars.githubusercontent.com/u/5630967?v=4
 
-- name: KpaBap
-  handle: KpaBap
-  role: CoreScope
-  bio: Signal and packet analysis for MeshCore.
-  link: https://github.com/Kpa-clawbot
-  avatar: https://cdn.discordapp.com/avatars/258666909267001355/a8d0aaf8ada7dd9c837dffe8f7e2aab7.webp?size=240
+# - name: KpaBap
+#   handle: KpaBap
+#   role: CoreScope
+#   bio: Signal and packet analysis for MeshCore.
+#   link: https://github.com/Kpa-clawbot
+#   avatar: https://cdn.discordapp.com/avatars/258666909267001355/a8d0aaf8ada7dd9c837dffe8f7e2aab7.webp?size=240
 
-- name: l5y
-  handle: l5y
-  role: PotatoMesh
-  bio: Federated self-hosted dashboard for MeshCore and Meshtastic.
-  link: https://bsky.app/profile/l5y.tech
-  avatar: https://cdn.bsky.app/img/avatar/plain/did:plc:kvluy3juxxe663v7pjuk2c4l/bafkreidombox34gnoaqf2dnsm5j2db6gphtgrhdqf7blpxi5wsdgmp2ywy
+# - name: l5y
+#   handle: l5y
+#   role: PotatoMesh
+#   bio: Federated self-hosted dashboard for MeshCore and Meshtastic.
+#   link: https://bsky.app/profile/l5y.tech
+#   avatar: https://cdn.bsky.app/img/avatar/plain/did:plc:kvluy3juxxe663v7pjuk2c4l/bafkreidombox34gnoaqf2dnsm5j2db6gphtgrhdqf7blpxi5wsdgmp2ywy
 
-- name: FDLamotte
-  handle: fdlamotte
-  role: Python tooling · STM32 firmware
-  bio: Python tooling and STM32 firmware variants for MeshCore.
-  link: https://github.com/fdlamotte
-  avatar: https://avatars.githubusercontent.com/u/4464292?v=4
+# - name: FDLamotte
+#   handle: fdlamotte
+#   role: Python tooling · STM32 firmware
+#   bio: Python tooling and STM32 firmware variants for MeshCore.
+#   link: https://github.com/fdlamotte
+#   avatar: https://avatars.githubusercontent.com/u/4464292?v=4
 
-- name: Adam Gessaman
-  handle: agessaman
-  role: meshcore-bot · meshcore-web-keygen
-  bio: MeshCore bots, keygen and tooling.
-  link: https://github.com/agessaman
-  avatar: https://avatars.githubusercontent.com/u/2591896?v=4
+# - name: Adam Gessaman
+#   handle: agessaman
+#   role: meshcore-bot · meshcore-web-keygen
+#   bio: MeshCore bots, keygen and tooling.
+#   link: https://github.com/agessaman
+#   avatar: https://avatars.githubusercontent.com/u/2591896?v=4
 
-- name: Yellowcooln
-  handle: yellowcooln
-  role: openHop
-  bio: Open-source LoRa mesh firmware.
-  link: https://github.com/yellowcooln
-  avatar: https://storage.ko-fi.com/cdn/useruploads/1e572a87-d335-4c19-8482-4d54b14f00b2_c3348ff9-9288-4e5b-b66d-a664c7280936.png
+# - name: Yellowcooln
+#   handle: yellowcooln
+#   role: openHop
+#   bio: Open-source LoRa mesh firmware.
+#   link: https://github.com/yellowcooln
+#   avatar: https://storage.ko-fi.com/cdn/useruploads/1e572a87-d335-4c19-8482-4d54b14f00b2_c3348ff9-9288-4e5b-b66d-a664c7280936.png
 
-- name: Vlastimil Slinták
-  handle: OK5VAS
-  role: Embedded & IoT · uArt.cz
-  bio: Embedded systems and IoT hardware.
-  link: https://uart.cz/
-  avatar: https://i.iinfo.cz/images/616/vlastimil-slintak-prev.jpg
+# - name: Vlastimil Slinták
+#   handle: OK5VAS
+#   role: Embedded & IoT · uArt.cz
+#   bio: Embedded systems and IoT hardware.
+#   link: https://uart.cz/
+#   avatar: https://i.iinfo.cz/images/616/vlastimil-slintak-prev.jpg
 
-- name: Jakub
-  handle: MarekZegare4
-  role: MeshCore Solo
-  bio: Standalone MeshCore firmware variant.
-  link: https://github.com/MarekZegare4
-  avatar: https://avatars.githubusercontent.com/u/106778416?v=4
+# - name: Jakub
+#   handle: MarekZegare4
+#   role: MeshCore Solo
+#   bio: Standalone MeshCore firmware variant.
+#   link: https://github.com/MarekZegare4
+#   avatar: https://avatars.githubusercontent.com/u/106778416?v=4
 
-- name: Jiří Eischmann
-  handle: sesivany
-  role: Meshy · Desktop app
-  bio: Desktop app for MeshCore.
-  link: https://codeberg.org/sesivany
-  avatar: https://codeberg.org/avatars/ce3deb322056e192749684f7d35b3c95c916d1dc36c07f9dbc064650cec2b731
+# - name: Jiří Eischmann
+#   handle: sesivany
+#   role: Meshy · Desktop app
+#   bio: Desktop app for MeshCore.
+#   link: https://codeberg.org/sesivany
+#   avatar: https://codeberg.org/avatars/ce3deb322056e192749684f7d35b3c95c916d1dc36c07f9dbc064650cec2b731
 
-- name: Juraj Bednár
-  handle: jurbed
-  role: Roadstr
-  bio: Privacy tech, open hardware and decentralised networks.
-  link: https://juraj.bednar.io/
-  avatar: https://people.data.heterarchy.fyi/people/juraj-bednar/avatar-400w.webp
+# - name: Juraj Bednár
+#   handle: jurbed
+#   role: Roadstr
+#   bio: Privacy tech, open hardware and decentralised networks.
+#   link: https://juraj.bednar.io/
+#   avatar: https://people.data.heterarchy.fyi/people/juraj-bednar/avatar-400w.webp
 
-- name: sosprz
-  handle: sosprz
-  role: MeshCore Cardputer ADV · Wio Tracker
-  bio: Custom MeshCore firmware for Cardputer and Wio Tracker.
-  link: https://github.com/sosprz
-  avatar: https://avatars.githubusercontent.com/u/2173677?v=4
+# - name: sosprz
+#   handle: sosprz
+#   role: MeshCore Cardputer ADV · Wio Tracker
+#   bio: Custom MeshCore firmware for Cardputer and Wio Tracker.
+#   link: https://github.com/sosprz
+#   avatar: https://avatars.githubusercontent.com/u/2173677?v=4
 
 - name: Aleš Janda
   handle: kybl
@@ -160,18 +160,18 @@
   link: https://github.com/kybl
   avatar: https://avatars.githubusercontent.com/u/246587?v=4
 
-- name: Václav Pavlín
-  handle: vpavlin
-  role: Logos · logos-fieldkit
-  bio: Author of logos-fieldkit, a self-contained LoRa mesh field node.
-  link: https://github.com/vpavlin
-  avatar: https://pbs.twimg.com/profile_images/760222053056274432/MwKmK4J7_400x400.jpg
+# - name: Václav Pavlín
+#   handle: vpavlin
+#   role: Logos · logos-fieldkit
+#   bio: Author of logos-fieldkit, a self-contained LoRa mesh field node.
+#   link: https://github.com/vpavlin
+#   avatar: https://pbs.twimg.com/profile_images/760222053056274432/MwKmK4J7_400x400.jpg
 
-- name: Jindřich Skácel
-  role: MeshCore enthusiast
-  bio: Local MeshCore enthusiast.
-  link: https://www.linkedin.com/in/jindrichskacel/
-  avatar: https://media.licdn.com/dms/image/v2/C5603AQGEnk4fWzAS3Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517680678660?e=2147483647&v=beta&t=58R6hNG-jTixZibDbhdS42r-d9qw7_YsY4sWkSbvlbE
+# - name: Jindřich Skácel
+#   role: MeshCore enthusiast
+#   bio: Local MeshCore enthusiast.
+#   link: https://www.linkedin.com/in/jindrichskacel/
+#   avatar: https://media.licdn.com/dms/image/v2/C5603AQGEnk4fWzAS3Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517680678660?e=2147483647&v=beta&t=58R6hNG-jTixZibDbhdS42r-d9qw7_YsY4sWkSbvlbE
 
 - name: You?
   role: The CFP is open — come speak
