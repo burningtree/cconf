@@ -173,6 +173,13 @@
 #   link: https://www.linkedin.com/in/jindrichskacel/
 #   avatar: https://media.licdn.com/dms/image/v2/C5603AQGEnk4fWzAS3Q/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517680678660?e=2147483647&v=beta&t=58R6hNG-jTixZibDbhdS42r-d9qw7_YsY4sWkSbvlbE
 
+- name: tree 木
+  handle: burningtree
+  role: COREconf & MeshCore Ninja
+  bio: Builder behind COREconf.
+  link: https://github.com/burningtree
+  avatar: https://avatars.githubusercontent.com/u/67269?v=4
+
 - name: You?
   role: The CFP is open — come speak
   link: mailto:hello@coreconf.dev
