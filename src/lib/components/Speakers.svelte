@@ -19,7 +19,7 @@
   <div class="mx-auto max-w-7xl px-6 lg:px-10">
     <SectionHeading
       index="02"
-      kicker="Speakers"
+      kicker="People"
       title="Who's coming."
     />
     <p class="-mt-8 mb-12 max-w-xl text-mist">

@@ -13,7 +13,7 @@ export const conf = {
 
 export const nav = [
   { label: 'About', href: '#about' },
-  { label: 'Speakers', href: '#speakers' },
+  { label: 'People', href: '#speakers' },
   { label: 'Communities', href: '#communities' },
   { label: 'Supporters', href: '#sponsors' }
 ];
@@ -127,6 +127,47 @@ export const communityGroups = [
         description: 'Running a local mesh community? Come speak, demo, teach or share field notes.'
       }
     ]
+  }
+];
+
+// Hardware we expect to have on the table — boards, radios and gadgets people
+// can get their hands on. Seeded with popular kit; edit freely.
+export const hardware = [
+  {
+    name: 'Heltec LoRa32 V3',
+    category: 'ESP32 dev board',
+    chip: 'ESP32-S3 · SX1262',
+    description: 'Cheap, ubiquitous ESP32 board with an OLED — the default starting point for a lot of mesh builds.'
+  },
+  {
+    name: 'LILYGO T-Deck',
+    category: 'Handheld',
+    chip: 'ESP32-S3 · SX1262',
+    description: 'Keyboard, trackball and screen in one — a proper handheld node for messaging on the go.'
+  },
+  {
+    name: 'RAK WisBlock (RAK4631)',
+    category: 'Modular node',
+    chip: 'nRF52840 · SX1262',
+    description: 'Low-power nRF52 core with a snap-together sensor and IO ecosystem for field-ready builds.'
+  },
+  {
+    name: 'Seeed XIAO nRF52840',
+    category: 'Tiny core',
+    chip: 'nRF52840',
+    description: 'Thumbnail-sized low-power core, paired with a Wio-SX1262 for compact, coin-cell nodes.'
+  },
+  {
+    name: 'Station G2',
+    category: 'Base station',
+    chip: 'nRF52840 · SX1262',
+    description: 'A solid indoor/outdoor gateway-class node for anchoring a local mesh.'
+  },
+  {
+    name: 'Antennas & RF bits',
+    category: 'Accessories',
+    chip: '433 / 868 / 915 MHz',
+    description: 'A pile of antennas, pigtails, amplifiers and SDR dongles to test range and see the spectrum live.'
   }
 ];
 
