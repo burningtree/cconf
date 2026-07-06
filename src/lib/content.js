@@ -2,9 +2,9 @@
 export const conf = {
   edition: '#0',
   year: '2026',
-  city: 'Brno',
+  city: 'Prague',
   dates: 'October 10-11, 2026',
-  datesPlace: 'October 10-11, 2026 · Brno, Czech Republic',
+  datesPlace: 'October 10-11, 2026 · Prague, Czech Republic',
   tagline: ['Open mesh technologies.', 'Real hardware.', 'Human networks.'],
   ticketUrl: '#tickets',
   repoUrl: 'https://github.com/',
