@@ -17,8 +17,8 @@
 
   const base = import.meta.env.BASE_URL;
 
-  /** @type {{ symbolRate:number, airtime:number, totalSymbols:number, preamble:number }} */
-  let { profile } = $props();
+  /** @type {{ profile:{ symbolRate:number, airtime:number, totalSymbols:number, preamble:number }, backdrop:string, tower:{ x:number, y:number } }} */
+  let { profile, backdrop = 'backdrop.png', tower = { x: 1080, y: 426 } } = $props();
 
   let canvas;
 
@@ -172,18 +172,17 @@
       locateBeacon();
     };
     img.onerror = () => (canvas.style.display = 'none');
-    img.src = `${base}backdrop.png`;
-
-    // BX/BY = beacon position within the 1448x1086 image (1080, 426).
-    const BX = 1080 / 1448, BY = 426 / 1086;
+    img.src = `${base}${backdrop}`;
 
     // beacon screen position (CSS px), from object-cover / object-right fit
     let rw = 0, rh = 0, beaconX = 0, beaconY = 0;
     const locateBeacon = () => {
       const scale = Math.max(rw / imgW, rh / imgH);
       const dw = imgW * scale, dh = imgH * scale;
-      beaconX = rw - dw + BX * dw; // right-aligned
-      beaconY = (rh - dh) / 2 + BY * dh; // vertically centered
+      const bx = tower.x / imgW;
+      const by = tower.y / imgH;
+      beaconX = rw - dw + bx * dw; // right-aligned
+      beaconY = (rh - dh) / 2 + by * dh; // vertically centered
     };
 
     let dpr = 1;

@@ -6,6 +6,20 @@
   import { loraProfile } from '../lora.js';
 
   const base = import.meta.env.BASE_URL;
+  const placeVariants = {
+    liberec: {
+      name: 'Liberec',
+      backdrop: 'backdrop-liberec.png',
+      tower: { x: 1094, y: 393 }
+    }
+  };
+  const placeKey = typeof window === 'undefined'
+    ? ''
+    : new URLSearchParams(window.location.search).get('place')?.toLowerCase();
+  const place = placeVariants[placeKey] ?? {};
+  const backdrop = place.backdrop ?? 'backdrop.png';
+  const tower = place.tower ?? { x: 1080, y: 426 };
+  const placeName = place.name ?? conf.city;
 
   // LoRa transmitter config (MeshCore-style defaults) → radio profile.
   // Kept as strings for the bits-ui selects; converted for the math.
@@ -20,14 +34,14 @@
   <!-- Backdrop image. Swap /static/backdrop.png to change it. -->
   <div class="absolute inset-0">
     <img
-      src={`${base}backdrop.png`}
+      src={`${base}${backdrop}`}
       alt=""
       aria-hidden="true"
       class="h-full w-full object-cover object-right contrast-115"
       onerror={(e) => (e.currentTarget.src = `${base}hero.svg`)}
     />
     <!-- WebGL layer: LoRa broadcast waves warp the backdrop pixels -->
-    <RFDistort {profile} />
+    <RFDistort {profile} {backdrop} {tower} />
     <!-- Left-to-right fade so text stays readable over any image -->
     <div class="absolute inset-0 bg-gradient-to-r from-void via-void/85 to-void/10"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-void via-transparent to-void/40"></div>
@@ -47,7 +61,7 @@
       <h1 class="rise mt-8" style="animation-delay: 120ms">
         <Wordmark size="text-6xl sm:text-7xl lg:text-8xl" />
         <span class="mt-1 block font-sans text-5xl font-light text-sky sm:text-6xl lg:text-7xl">
-          {conf.city}
+          {placeName}
         </span>
       </h1>
 
